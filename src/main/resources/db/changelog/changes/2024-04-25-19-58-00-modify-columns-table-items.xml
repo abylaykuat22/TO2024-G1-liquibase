@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+  <changeSet id="1" author="k.abylay">
+    <modifyDataType tableName="ITEMS"
+      columnName="DESCRIPTION" newDataType="TEXT"/>
+  </changeSet>
+
+  <changeSet id="2" author="k.abylay">
+    <addNotNullConstraint tableName="ITEMS" columnName="NAME"/>
+  </changeSet>
+</databaseChangeLog>

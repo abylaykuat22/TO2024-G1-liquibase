@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                                http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+  <include file="changes/2024-04-25-19-35-00-create-table-items.xml" relativeToChangelogFile="true"/>
+  <include file="changes/2024-04-25-19-52-00-modify-column-table-items.xml" relativeToChangelogFile="true"/>
+  <include file="changes/2024-04-25-19-58-00-modify-columns-table-items.xml" relativeToChangelogFile="true"/>
+  <include file="changes/2024-04-25-20-03-00-create-table-countries.sql" relativeToChangelogFile="true"/>
+  <include file="changes/2024-04-25-20-09-00-add-values-table-countries.sql" relativeToChangelogFile="true"/>
+  <include file="changes/2024-04-25-20-20-00-add-values-table-items.sql" relativeToChangelogFile="true"/>
+  <include file="changes/2024-04-25-28-20-00-modify-column-table-countries.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>

@@ -1,0 +1,9 @@
+-- liquibase formatted sql
+
+-- changeset k.abylay:1
+ALTER TABLE COUNTRIES
+ALTER COLUMN CODE SET NOT NULL;
+
+-- changeset k.abylay:2
+ALTER TABLE COUNTRIES
+ADD CONSTRAINT CODE_UNIQUE UNIQUE(CODE)
